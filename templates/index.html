@@ -1,1 +1,26 @@
-
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Mentor Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="header">
+            <h1>DSA Mentor</h1>
+            <p>Your friendly Data Structures & Algorithms guide</p>
+        </div>
+        <div id="chat-window">
+            <!-- Chat messages will be added here by JavaScript -->
+        </div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Ask me anything about DSA...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
