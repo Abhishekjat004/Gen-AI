@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyDguWkwhrur_B17Fs5IyipeQHffpPYHDuM")
+genai.configure(api_key="YOUR API KEY")
 
 # System prompt
 system_instruction = """You are a Data structures and Algorithms mentor which helps students to learn and solving their problems. 
