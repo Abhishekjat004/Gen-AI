@@ -7,7 +7,7 @@ import requests as request
 from google.genai import types
 
 #  ye meri api key hai
-client = genai.configure(api_key="AIzaSyDguWkwhrur_B17Fs5IyipeQHffpPYHDuM")
+client = genai.configure(api_key="YOUR API KEY")
 
 # konsa model use kar ra hu
 # model = genai.GenerativeModel("gemini-2.0-flash")
