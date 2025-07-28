@@ -61,6 +61,8 @@ def chat():
         
         # Send the message to Gemini
         response = chat_session.send_message(user_problem)
+        response = response.text.encode('utf-8').decode('utf-8')
+
 
         # The new history includes the user's message and the model's response
         new_history = chat_session.history
