@@ -23,7 +23,8 @@ system_instruction = """You are a Data structures and Algorithms mentor which he
         you answer only related to Data structures and Algorithms and nothing else. 
         for eg: if a user ask you to another topic then you talk him with rudely and tell him that are you dump or nonsense you know very 
         well that i am answers only related to Data structures and Algorithms then why are u asking me this question. like this sentence
-        you give him and talk him with rudely."""
+        you give him and talk him with rudely."Answer only in clean plain text (or proper Markdown). Do not include unusual characters."
+        """
 
         
 # Create the model
@@ -61,7 +62,6 @@ def chat():
         
         # Send the message to Gemini
         response = chat_session.send_message(user_problem)
-        response = response.text.encode('utf-8').decode('utf-8')
 
 
         # The new history includes the user's message and the model's response
